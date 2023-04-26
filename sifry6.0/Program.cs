@@ -16,6 +16,7 @@ using (Aes myAes = Aes.Create())
 }
 
 
+
 byte[] publicKey;
 byte[] privateKey;
 using (RSA rsa = RSA.Create())
@@ -60,8 +61,27 @@ using (SHA256 sha256Hash = SHA256.Create())
         }
         Console.WriteLine();
         Console.WriteLine();
-    } 
+    }
+}
+
+//verejny klic dekrypce
+string text = "Secret message.";
+byte[] original = Encoding.ASCII.GetBytes(text);
+byte[] encrypted;
+using (RSA rsa = RSA.Create())
+{
+    int amount;
+    rsa.ImportRSAPublicKey(publicKey, out amount);
+    encrypted = rsa.Encrypt(original, RSAEncryptionPadding.Pkcs1);
 }
 
 
+//privatni klic dekrypce
+byte[] received;
+using (RSA rsa = RSA.Create())
+{
+    int amount;
+    rsa.ImportRSAPrivateKey(privateKey, out amount);
+    received = rsa.Decrypt(encrypted, RSAEncryptionPadding.Pkcs1);
+}
 
