@@ -7,33 +7,38 @@ using (Aes myAes = Aes.Create())
 {
     foreach (var x in myAes.Key)
     {
-        Console.Write(String.Format("{0:x2} ", x));
+        Console.Write(String.Format("{0:x2} ", x, "\n"));
     }
     foreach (var x in myAes.IV)
     {
-        Console.Write(String.Format("{0:x2} ", x));
+        Console.Write(String.Format("{0:x2} ", x, "\n"));
     }
 }
- /*
+
+
 byte[] publicKey;
 byte[] privateKey;
 using (RSA rsa = RSA.Create())
 {
-    // Veřejný klíč
-    File.WriteAllBytes("TestPublicKey.rsa", rsa.ExportRSAPublicKey());  // binární soubor
-    string publicKeyXML = rsa.ToXmlString(false); // XML
-    publicKey = rsa.ExportRSAPublicKey(); // pole bajtů v paměti​
-    // Privátní klíč (obsahuje i veřejný klíč)
-    File.WriteAllBytes("TestPrivateKey.rsa", rsa.ExportRSAPrivateKey()); // binární klíč
-    string privateKeyXML = rsa.ToXmlString(true); // XML
-    privateKey = rsa.ExportRSAPrivateKey(); // pole bajtů v paměti​
+   // Veřejný klíč
+   File.WriteAllBytes("TestPublicKey.rsa", rsa.ExportRSAPublicKey());  // binární soubor
+   string publicKeyXML = rsa.ToXmlString(false); // XML
+   publicKey = rsa.ExportRSAPublicKey(); // pole bajtů v paměti​
+   // Privátní klíč (obsahuje i veřejný klíč)
+   File.WriteAllBytes("TestPrivateKey.rsa", rsa.ExportRSAPrivateKey()); // binární klíč
+   string privateKeyXML = rsa.ToXmlString(true); // XML
+   privateKey = rsa.ExportRSAPrivateKey(); // pole bajtů v paměti​
 
-    RSAParameters rsaParams = rsa.ExportParameters(true); // získej parametry použité při výpočtu    
-    Console.WriteLine("mezera pYčo " + privateKey);
-}*/
+   RSAParameters rsaParams = rsa.ExportParameters(true); // získej parametry použité při výpočtu    
+   Console.WriteLine("\n mezera pYčo " + privateKey);
+}
 
-string text1 = "Ahoj, světe";
-string text2 = "Ahoj, květe";
+Console.WriteLine("\n Zadejte 1. string na převedení pomocí HASH");
+string text1 = Console.ReadLine();
+Console.WriteLine("\n Zadejte 2. string na převedení pomocí HASH");
+string text2 = Console.ReadLine();
+
+
 byte[] hash1;
 byte[] hash3;
 using (SHA256 sha256Hash = SHA256.Create())
