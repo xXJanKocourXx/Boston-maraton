@@ -33,6 +33,8 @@ using (RSA rsa = RSA.Create())
    Console.WriteLine("\nJara je homosexual " + privateKey);
 }
 
+
+
 Console.WriteLine("\n Zadejte 1. string na převedení pomocí HASH");
 string text1 = Console.ReadLine();
 Console.WriteLine("\n Zadejte 2. string na převedení pomocí HASH");
@@ -40,14 +42,15 @@ string text2 = Console.ReadLine();
 
 
 byte[] hash1;
-byte[] hash3;
+byte[] hash2;
+
 using (SHA256 sha256Hash = SHA256.Create())
 {
     hash1 = sha256Hash.ComputeHash(Encoding.UTF8.GetBytes(text1));
-    hash3 = sha256Hash.ComputeHash(Encoding.UTF8.GetBytes(text2));
+    hash2 = sha256Hash.ComputeHash(Encoding.UTF8.GetBytes(text2));
 
     WriteBytes(hash1); // b55460638c30fa90053090c95d40b67db7b37bfeb5d4fb2a7a07506edc2deb93
-    WriteBytes(hash3); // a5163478bf307f1f84fcc62adf9ba84fba1ac975255e77e9f34e881e344aea4a​
+    WriteBytes(hash2); // a5163478bf307f1f84fcc62adf9ba84fba1ac975255e77e9f34e881e344aea4a​
 
     static void WriteBytes(byte[] data)
     {
