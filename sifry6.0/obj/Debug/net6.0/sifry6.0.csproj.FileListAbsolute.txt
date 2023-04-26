@@ -1,0 +1,5 @@
+D:\repos\sifry6.0\sifry6.0\obj\Debug\net6.0\sifry6.0.csproj.AssemblyReference.cache
+D:\repos\sifry6.0\sifry6.0\obj\Debug\net6.0\sifry6.0.GeneratedMSBuildEditorConfig.editorconfig
+D:\repos\sifry6.0\sifry6.0\obj\Debug\net6.0\sifry6.0.AssemblyInfoInputs.cache
+D:\repos\sifry6.0\sifry6.0\obj\Debug\net6.0\sifry6.0.AssemblyInfo.cs
+D:\repos\sifry6.0\sifry6.0\obj\Debug\net6.0\sifry6.0.csproj.CoreCompileInputs.cache

@@ -1,0 +1,15 @@
+D:\repos\sifry6.0\sifry6.0\bin\Debug\net6.0\sifry6.exe
+D:\repos\sifry6.0\sifry6.0\bin\Debug\net6.0\sifry6.deps.json
+D:\repos\sifry6.0\sifry6.0\bin\Debug\net6.0\sifry6.runtimeconfig.json
+D:\repos\sifry6.0\sifry6.0\bin\Debug\net6.0\sifry6.dll
+D:\repos\sifry6.0\sifry6.0\bin\Debug\net6.0\sifry6.pdb
+D:\repos\sifry6.0\sifry6.0\obj\Debug\net6.0\sifry6.csproj.AssemblyReference.cache
+D:\repos\sifry6.0\sifry6.0\obj\Debug\net6.0\sifry6.GeneratedMSBuildEditorConfig.editorconfig
+D:\repos\sifry6.0\sifry6.0\obj\Debug\net6.0\sifry6.AssemblyInfoInputs.cache
+D:\repos\sifry6.0\sifry6.0\obj\Debug\net6.0\sifry6.AssemblyInfo.cs
+D:\repos\sifry6.0\sifry6.0\obj\Debug\net6.0\sifry6.csproj.CoreCompileInputs.cache
+D:\repos\sifry6.0\sifry6.0\obj\Debug\net6.0\sifry6.dll
+D:\repos\sifry6.0\sifry6.0\obj\Debug\net6.0\refint\sifry6.dll
+D:\repos\sifry6.0\sifry6.0\obj\Debug\net6.0\sifry6.pdb
+D:\repos\sifry6.0\sifry6.0\obj\Debug\net6.0\sifry6.genruntimeconfig.cache
+D:\repos\sifry6.0\sifry6.0\obj\Debug\net6.0\ref\sifry6.dll
