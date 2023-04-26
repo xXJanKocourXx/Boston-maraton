@@ -29,7 +29,7 @@ using (RSA rsa = RSA.Create())
     privateKey = rsa.ExportRSAPrivateKey(); // pole bajtů v paměti​
 
     RSAParameters rsaParams = rsa.ExportParameters(true); // získej parametry použité při výpočtu    
-    Console.WriteLine("mezera pYčo " + privateKey);
+    Console.WriteLine("Jára je homosexuál " + privateKey);
 }*/
 
 string text1 = "Ahoj, světe";
